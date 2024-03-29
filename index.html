@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azarudeen's Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body onload="getData()">
+    <div id="container">
+
+        <!-- sidebar -->
+        <div class="sidebar">
+            <!-- image -->
+            <figure>
+                <img src="azar.jpeg" alt="azar">
+                <figcaption>
+                    <h2>Azarudeen A</h2>
+                    <p>Web Developer</p>
+                </figcaption>
+            </figure>
+            <button id="emailButton">Email Me</button>
+            <div class="links">
+                <i id="linkedIn" class="fa-brands fa-linkedin fa-2xl"></i>
+            </div>
+        </div>
+
+
+    <!-- About  -->
+        <div class="about">
+            <h1>About Me</h1>
+            <p>I am a tech-savvy individual with a Bachelor's degree in Computer Science, seeking
+                employment as a web developer. I am passionate about consistencly advancing my knowledge and skills.
+            </p>
+
+            <div class="acheievements">
+
+                <div class="projects">
+                    <i class="fa-brands fa-uncharted fa-xl"></i>
+                    <b>Projects</b>
+                    <h2 id="project_count">0</h2>
+                </div>
+
+                <div class="certifications">
+                    <i class="fa-solid fa-certificate"></i>
+                    <b>Certifications</b>
+                    <h2 id="certifications_count">0</h2>
+                </div>
+
+            </div>
+            <button id = "downloadButton">Resume</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

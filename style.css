@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*
+{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* grid */
+#container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+}
+
+/* sidebar */
+.sidebar img 
+{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.sidebar 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar > button
+{
+    width: 200px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    padding: 6px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+figcaption
+{
+    margin-left: 10px;
+}
+figcaption p 
+{
+    margin-left: 14px;
+}
+.links i 
+{
+   position: relative;
+   top: 20px;
+}
+/* about */
+.about
+{
+    background-color: #a6a6a6;
+    display: flex;
+    flex-direction: column;
+    padding: 20%;
+}
+.about > p 
+{
+    margin-top: 20px;
+}
+
+.projects,.certifications
+{
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 100px;
+    border: 1px solid #000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.projects > b 
+{
+    margin-top: 10%;
+}
+.acheievements
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.about > button 
+{
+    background-color: #000;
+    color: #fff;
+    width: 200px;
+    border: none;
+    padding: 8px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width:576px) {
+    #container
+    {
+        display: block;
+    }
+    .sidebar
+    {
+        height: 55vh;
+    }
+    .acheievements
+    {
+        display: block;
+    }
+    .projects,.certifications
+    {
+        margin: 15% auto;
+    }
+    .about > button 
+    {
+        margin: 0 auto;
+    }
+    .about > h1
+    {
+        text-align: center;
+    }
+    .about > p
+    {
+        text-align: justify;
+    }
+
+}
+
+@media screen and (min-width:600px) {
+    .acheievements{
+            gap: 20px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .about > button 
+    {
+        position: relative;
+        left:100px;
+    }
+}
+
+
+
+
+
